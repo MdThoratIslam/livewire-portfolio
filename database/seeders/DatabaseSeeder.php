@@ -21,5 +21,12 @@ class DatabaseSeeder extends Seeder
         foreach ($data as $user) {
             User::create($user);
         }
+        $this->call(
+            [
+                DivisionsSeeder::class,
+                DistrictSeeder::class,
+                PoliceStationSeeder::class,
+            ]
+        );
     }
 }
