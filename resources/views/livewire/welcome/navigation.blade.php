@@ -14,7 +14,7 @@
             Pricing
         </button>
     </div>
-    
+
     <!-- Right Section: Authentication Links -->
     <div class="flex flex-1 justify-end -mx-3">
         @auth
@@ -25,11 +25,11 @@
             <a href="{{ route('login') }}" class="tab-link text-gray-500 hover:bg-blue-800 hover:text-white focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-1">
                 Log in
             </a>
-            @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="tab-link text-gray-500 hover:bg-blue-800 hover:text-white focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-1">
-                    Register
-                </a>
-            @endif
+{{--            @if (Route::has('register'))--}}
+{{--                <a href="{{ route('register') }}" class="tab-link text-gray-500 hover:bg-blue-800 hover:text-white focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-1">--}}
+{{--                    Register--}}
+{{--                </a>--}}
+{{--            @endif--}}
         @endauth
     </div>
 </nav>

@@ -146,7 +146,6 @@
         <aside class="bg-white rounded-lg shadow-md p-6">
             <!-- Profile Header -->
             <div class="relative w-full h-48">
-                {{--<img src="https://via.placeholder.com/300x200" alt="Header Image" class="rounded-lg object-cover w-full h-full"/>--}}
                 <img src="{{$cover_image}}" alt="Header Image" class="rounded-lg object-cover w-full h-full"/>
                 <img src="{{$profile_image}}" alt="Profile Picture" class="absolute bottom-[-40px] left-64 transform
                  -translate-x-1/2 rounded-full border-4 border-white shadow-md w-2/6">
@@ -157,7 +156,7 @@
                 <p class="text-gray-500 text-sm text-justify">
                     I am a professional web developer with 5 years of experience in web application development. I have developed a wide range of websites using PHP, Laravel, HTML, CSS, JavaScript, jQuery, and MySQL including sites for startup companies and small businesses. My core competency lies in complete end-end management of a new website development project, and I am seeking opportunities to build websites from the ground up for you or your business.</p>
             </div>
-            
+
             <!-- Skills -->
             <div class="mt-6 text-center">
                 <div class="flex flex-wrap justify-center gap-2">
@@ -179,7 +178,7 @@
             </div>
             <div class="mt-6 text-center">
                 <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">
-                    Download CV ⬇
+                    Download CV <span class="text-xs ml-2"><i class="fas fa-download"></i></span>
                 </a>
             </div>
             <!-- Contact Info -->
@@ -192,7 +191,7 @@
                     <li><strong>Relocation:</strong> No</li>
                 </ul>
             </div>
-            
+
         </aside>
         <!-- Projects Section -->
         <main class="md:col-span-2 bg-white rounded-lg shadow-md p-6">
@@ -202,17 +201,15 @@
             <livewire:about-component />
             <livewire:experience-component />
             <livewire:project-component />
-            
+
         </main>
         <footer class="md:col-span-3 bg-white rounded-lg shadow-md p-6">
             Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
         </footer>
     </div>
     <!-- JavaScript -->
-    
-    
     @livewireScripts
-    
+
 </body>
 </html>
 
